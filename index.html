@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bao Quoc Doan | Creative Developer </title>
+		<meta name="description" content="A CSS Grid powered menu with a box look" />
+		<meta name="keywords" content="menu, css grid, box, navigation, web development, animation" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo1.css" />
+		<link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
+		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.6.2/rellax.min.js"></script>
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="demo-1">
+		<svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+			<symbol id="icon-drop" viewBox="0 0 24 24">
+				<title>drop</title>
+				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+			</symbol>
+		</svg>
+		<main>
+			<div class="message">To see the menu, please view on a larger screen.</div>
+			<div class="content content--fixed">
+				<nav class="demos">
+					<!--
+					<a class="demo demo--current" href="index.html">demo 1</a>
+					<a class="demo" href="index2.html">demo 2</a>
+					-->
+					<a href="https://github.com/codrops/GridMenu" class="github">github</a>
+				</nav>
+				<button class="menu-trigger">+ more</button>
+			</div>
+
+			<!-- content slides -->
+			<div id="content-1" class="content content--switch content--switch-current">
+				<div class="box-row">
+					<div class="panel">
+						<div class="">
+							<h2 class="content__title">Bao Quoc Doan</h2>
+							<div class="content__date">creative coder</div>
+							<div class="content__location">berkeley, CA</div>
+							<div class="content__location">1 951 415 7255</div> 
+							<div class="content__location">developerwok@gmail.com</div>
+						</div>
+					</div>
+					<div class="panel">
+						<blockquote>
+							I'm seeking an <span class="highlight">enthusiastic</span> and 
+							<span class="highlight">mission orientated team</span>
+							 that can benefit from my 
+							 <u>creative thinking</u>, 
+							 <u>technical apititude</u> and 
+							 <u>leadership qualities</u>. 
+						</blockquote>
+					</div>
+				</div>
+			</div>
+			<div id="content-6" class="content content--switch">
+				<div class="box-row">
+					<div class="panel">
+						<h2 class="content__title fixed-center">hello</h2>
+					</div>
+					<div class="panel">
+						<p class="content__text">video excerpts</p>
+					</div>
+				</div>
+			</div>
+			<div id="content-4" class="content content--switch">
+				<div class="box-row">
+					<div class="panel">
+						<div class="fixed-center">
+							<h2 class="content__title fixed-center">Skills</h2>
+						</div>
+					</div>
+					<div class="panel skills">
+						<div class="scroll-pane">
+
+						<p class="content__text"><strong>software development</strong></p>
+						<p>
+							7+ years
+						</p>
+						<p>
+							I've honed my skills as 
+							a freelance developer for digital agencies and worked 
+							as a senior front-end developer for venture backed startup incubators. 
+							I'm deeply curious and have used my technical apptitude 
+							to help teams reach and accomplished there big picture goals.
+						</p>
+						<pre>
+Node / Javascript (ES6)
+React / Mobx / NextJs
+Webpack
+Jquery / Html / Css / Less 
+Docker
+Nginx
+Git
+WebSockets
+Electron
+Bash Scripting
+Php
+MYSQL / Mongo
+Oauth
+Wordpress/Shopify theme development
+						</pre>
+						
+						<p class="content__text"><strong>product management</strong></p>
+						<p>
+							2+ years
+						</p>
+
+						<p>
+							After honing my techincal web development skills i decided to 
+							explore the process of cofounding a SASS product.  The challenge
+							and vision was to build a visual version of slack for creative teams.
+							The process of building a team, and wearing many hats
+							is extremely valuable. I'm adept and familiar with fast moving 
+							and resource strap enviroments.
+						</p>
+
+						<pre>
+conducting user interviews
+ux / ui prototyping
+leading feature development sprints
+analytic funnels
+user event tracking
+						</pre>
+
+						<p class="content__text"><strong>visual communication</strong></p>
+						<p>
+							5+ years
+						</p>
+						<p>
+							I've have an ongoing interest in photography and the communication
+							of ideas through images. My early collegiate endeavors into 
+							advertisment design and photojournalism taught me the power of
+							imagery
+						</p>
+
+						<pre>
+website design
+wireframes
+graphic design
+adobe illustrator
+sketch
+digital photography
+						</pre>
+
+						<p class="content__text"><strong>teaching</strong></p>
+
+						<p>
+							2+ years
+						</p>
+
+						<p>
+							Teaching has been a way to for me to share my progress.
+							I have memories of teaching standerized test in college, 
+							and my most fullfilling teaching experience has 
+							starting a weekend coding office hours.
+						</p>
+						<pre>
+internship program development
+coding office hours
+						</pre>
+						</div>
+					</div>		
+				</div>
+			</div>
+			<div id="content-5" class="content content--switch">
+				<div class="box-row">
+					<div class="panel">
+						<div class="fixed-center">
+							<h2 class="content__title">Resume</h2>
+						</div>
+					</div>
+					<div class="panel">
+						<iframe src="https://developerwok.github.io/resume/"></iframe>
+					</div>		
+				</div>
+			</div>
+			<div id="content-3" class="content content--switch">
+				<div class="box-row">
+					<div class="panel">
+						<div class="rellax show-desktop">
+							I’m that default chill speed of "-2"
+						</div>
+						<h2 class="content__title fixed-center">Projects</h2>
+					</div>
+					<div class="panel" style="background-color: #3d384b">
+						<div class="">
+						<div class="scroll-ele">
+
+						<h3>
+							Wrangle.me
+						</h3>
+						<img src="/img/cover-wrangle.png" />
+						<p>
+							Creative teams use emails to discuss projects and 
+							share assets.  Staying organized across multple 
+							channels and platforms is challenging
+							and can get in the way of accomplishing goals.
+						</p>
+						<p>
+							From extensive interviews, the Wrangle team decided to 
+							build a tool to manage conversations around 
+							visual assets and discussion topics.
+						</p>
+						<p>
+							With Wrangle you can quickly import assets from Dropbox or easily add 
+							search results from the web. The ability to tag, categorize and export
+							to pdf makes collecting, curating and presenting ideas
+							a fluid process for creative teams.
+						</p>
+						<h3>
+							Help Kelp
+						</h3>
+						<img src="/img/cover-helpkelp.png" />
+						<p>
+							The Kelp Challenge is an enviromental restoration project.  
+							The project aims to mitigate the degradation of kelp forest 
+							located in the Santa Monica Bay,
+							with the ultimate goal of acheiving full kelp forest restoration.  
+						</p>
+						<p>
+							Spearheaded by the Climate Cents team, under the guidance of the
+							Bay Foundation, the project needed someone 
+							to realize the wireframes and implement the designer's 
+							complex ui interactions.  The challenge of making
+							a parralax based site with a mulititude of animation elements was
+							rewarding. 
+						</p>
+						<p>
+							My pro-bono contribution helped Climate Cents 
+							get accepted into the University of Southern California Code 
+							for Change program. 
+						</p>
+						<p>
+							Code the Change is a 
+							student organization at USC that drives social impact 
+							through software projects for non profit organizations.
+						</p>	
+						<h3>
+							Newbie Gardening E-book
+						</h3>
+						<img src="/img/cover-plants.png" />
+						<p>
+							Gardening is often an intimidating experiences for those that have
+							not invested the time or have the space to learn how to grow
+							plants.  The plant world is diverse.
+						</p>
+						<p>
+							I wanted to summarize the information I was learning into 
+							a useful digital pamplet for those at the 
+							begining of there learning journey.
+						</p>
+						<h3>
+							Whisper node
+						</h3>
+
+						<img src="/img/cover-whisper.png" />
+						<p>
+							Whisper Node is a lighting panel that reacts to audio input.
+						</p>
+						<p>
+							I was responsible for the programming of a prototype 
+							designed for an interactive lighting system.
+							Using audio input as the driver for interaction, I created an 
+							algortihm to map the current volume of sound to intensity of light.
+							This was layered on top a secondary layer of light that was
+							mapped to historical recording of sound.  
+						</p>
+						<p style="height: 3rem;">
+							
+						</p>
+					</div>		
+
+					</div>
+					</div>
+				</div>
+			</div>
+			<div id="content-2" class="content content--switch">
+				<div class="box-row">
+					<div class="panel">
+						<h2 class="content__title">Tutorials & Ideas</h2>
+					</div>
+					<div class="panel">
+
+						<h3>Mental Models</h3>
+						<ol>
+							<li>Effort &amp; ephiphanies?</li>
+							<li>Knowing the unknown</li>
+							<li>Simplicity is a Harmonious Habit</li>
+						</ol>
+
+						<h3>Design</h3>
+						<ol>
+							<li>Basic UI / UX principles</li>
+							<li>Discovering User Needs</li>
+							<li>The AB test > C</li>
+						</ol>
+
+						<h3>Coding</h3>
+						<ol>
+							<li>Basic UI / UX principles</li>
+							<li>How to set up NextJs</li>
+							<li>How to set up Webpack</li>
+							<li>Organizing your Css</li>
+							<li>Introduction to ES6</li>
+						</ol>
+
+						<h3>Life Hacks</h3>
+						<ol>
+							<li>Use your Camera as your Notebook</li>
+							<li>Designing your habits</li>
+							<li>Zero Food Waste</li>
+						</ol>
+
+						<h3>Horiculture</h3>
+						<ol>
+							<li>How to manage soil</li>
+							<li>A simple guide to succulents</li>
+						</ol>
+
+					</div>		
+				</div>
+			</div>
+
+			<!-- grid nav -->
+			<nav class="grim">
+				<div class="grim__item">
+					<div class="grim__item-bg grim__item-bg--1"></div>
+				</div>
+				<div class="grim__item">
+					<div class="grim__item-bg grim__item-bg--2"></div>
+				</div>
+				<div class="grim__item">
+					<div class="grim__item-bg grim__item-bg--3"></div>
+					<div class="grim__item-content">
+						<div class="grim__item-inner">
+							<button class="menu-trigger menu-trigger--close">< back</button>
+						</div>
+					</div>
+				</div>
+				<div class="grim__item">
+					<div class="grim__item-bg grim__item-bg--4"></div>
+				</div>
+				<div class="grim__item">
+					<div class="grim__item-bg grim__item-bg--5 darken-bkg"></div>
+					<a href="#content-1" class="grim__link grim__item-content">
+						<div class="grim__item-inner">
+							<h3 class="grim__item-title">Contact</h3>
+							<span class="grim__item-desc">say hello</span>
+						</div>
+					</a>
+				</div>
+				<div class="grim__item">
+					<div class="grim__item-bg grim__item-bg--6 darken-bkg"></div>
+					<a href="#content-2" class="grim__link grim__item-content">
+						<div class="grim__item-inner">
+							<h3 class="grim__item-title">Tutorials</h3>
+							<span class="grim__item-desc">&amp; Ideas</span>
+						</div>
+					</a>
+				</div>
+				<div class="grim__item">
+					<div class="grim__item-bg grim__item-bg--7 darken-bkg"></div>
+					<a href="#content-3" class="grim__link grim__item-content">
+						<div class="grim__item-inner">
+							<h3 class="grim__item-title">Projects</h3>
+							<span class="grim__item-desc">&amp; endeavors</span>
+						</div>
+					</a>
+				</div>
+				<div class="grim__item">
+					<div class="grim__item-bg grim__item-bg--8 darken-bkg"></div>
+					<a href="#content-5" class="grim__link grim__item-content">
+						<div class="grim__item-inner">
+							<h3 class="grim__item-title">Resume</h3>
+							<span class="grim__item-desc">work history</span>
+						</div>
+					</a>
+				</div>
+				<div class="grim__item">
+					<div class="grim__item-bg grim__item-bg--9 darken-bkg"></div>
+					<a href="#content-4" class="grim__link grim__item-content">
+						<div class="grim__item-inner">
+							<h3 class="grim__item-title">Skills</h3>
+							<span class="grim__item-desc">acquired skills</span>
+						</div>
+					</a>
+				</div>
+				<div class="grim__item">
+					<div class="grim__item-bg grim__item-bg--10 darken-bkg" data-duration="1000" data-easing="easeOutQuint"></div>
+					<a href="#content-6" class="grim__link grim__item-content">
+						<div class="grim__item-inner">
+							<h3 class="grim__item-title">Personal FAQ</h3>
+
+							<h4>How do you like to communicate?</h4>
+							<h4>What are you passionate about?</h4>
+							<h4>What were some of your biggest challenges?</h4>
+							<h4>What strategies do you use to solve problems?</h4>
+							<h4>How do you like to work with people?</h4>
+							<h4>What skills are you currently developing?</h4>
+
+							<div class="hello-video">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/1PYNStp9jY0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							</div>
+
+							<h4>What are your strengths and weaknesses?</h4>
+
+<h4 style="
+	background: #fff;
+	padding: 6px;
+	border-radius: 4px;
+	color: #000;
+">... more ...</h4>
+
+						</div>
+					</a>
+				</div>
+			</nav>
+		</main>
+		<script src="js/demo.js"></script>
+		<script src="js/anime.min.js"></script>
+		<script src="js/menu.js"></script>
+		<script src="js/effects.js"></script>
+	</body>
+</html>

@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+
+.demo-1 {
+	font-family: 'Josefin Sans', sans-serif;
+    --color-text: #fff;
+    --color-bg: #101010;
+    --color-link: #f8d05d;
+    --color-link-hover: #949494;
+    --color-info: #f0f0f0;
+}
+
+p {
+	font-family: 'Cardo', serif;
+}
+
+.panel {
+	font-size: 1.4rem;
+}
+
+.panel p {
+	max-width: 520px;
+}
+
+.panel h3 {
+	padding-top: 4rem;
+}
+
+.panel img {
+	border-radius: 3px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	max-width: 580px;
+	width: 100%;
+}
+
+.content {
+	background-size: cover;
+	background-position: 50%;
+}
+
+.content__title {
+	font-size: 2rem;
+	margin: 0;
+	color: #fff;
+	text-shadow: 2px 4px rgba(0, 0, 0, 0.51);
+}
+
+.content__date {
+	font-size: 1rem;
+	padding: .5rem 0;
+}
+
+.content__location {
+	font-size: 1rem;
+	padding: .5rem 0;
+}
+
+.content__text {
+	max-width: 600px;
+	font-size: 1.25rem;
+	line-height: 1.4;
+	text-align: left;
+}
+
+/* home */
+#content-1 {
+	background-color: #383f4b;
+	background-image: url('/img/home_bkg.jpg');
+}
+
+#content-1 .box-row {
+	background-color: rgba(39, 5, 51, 0.67);
+}
+
+#content-1 .content__title {
+	color: #f8d15b;
+	text-shadow: 2px 4px #0000006e;
+}
+
+/* tutorials */
+#content-2 {
+	background-color: #383f4b;
+}
+
+/* projects */
+#content-3 {
+	background-color: #3d384b;
+}
+
+/* skills */
+#content-4 {
+  color: #4a1e1e;
+	background-color: #cece31;
+	background-image: url('/img/bg_two_eggs.jpg');
+}
+
+/* resume */
+#content-5 {
+	background-color: #394b38;
+	background-image: url('/img/bg_wood.jpg')
+}
+
+/* hello */
+#content-6 {
+	background-color: #4b4238;
+}
+
+.menu-trigger {
+	display: none;
+}
+
+.grim {
+	display: none;
+}
+
+iframe {
+	border: 0px;
+	outline: 0;
+	display: none;
+}
+
+pre {
+	color: #1fbd1f;
+	background: black;
+	border: 0;
+	border-radius: 4px;
+	padding: 1.5rem;
+}
+
+.hello-video {
+	position: relative;
+	width: 80%;
+	margin: 1rem 0;
+	border: 2px solid #8c8c8c7d;
+	overflow: hidden;
+	box-shadow: -4px 9px 148px 30px #00000042;
+	border-radius: 5px;
+}
+
+.hello-video iframe {
+	position: relative;
+	height: 400px;
+	width: 100%;
+	left: 0;
+}
+
+/** mobile **/
+@media screen and (max-width: 55em) {
+	#content-4,
+	#content-5 {
+		background-image: none;
+	}
+}
+
+/** desktop **/
+@media screen and (min-width: 55em) {
+
+	.scroll-box {
+		height: 100vh;
+    overflow-y: scroll;
+    margin-right: -2rem;
+    padding-right: 2rem;
+	}
+
+	.scroll-ele {
+    display: block;
+    height: 100%;
+    width: 100%;
+	}
+
+
+	iframe {
+		display: block;
+		height: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+	}
+
+	.content__title {
+		font-size: 8vw;
+		margin-left: -8px;
+	}
+
+	.fixed-center {
+		position: fixed;
+    width: 50%;
+    top: 50%;
+    margin-top: -8vh;
+	}
+
+
+	.content__date,
+	.content__location {
+		font-size: 1rem;
+	}
+	.menu-trigger {
+		display: inline-block;
+		background: none;
+		border: 0;
+		grid-area: menu;
+		justify-self: start;
+		align-self: end;
+		cursor: pointer;
+		pointer-events: auto;
+		font-family: inherit;
+		color: inherit;
+		position: relative;
+		padding: 1em;
+		color: #000;
+		white-space: nowrap;
+		background-color: #f8d15b;
+	}
+
+	.menu-trigger--close {
+		align-self: center;
+	}
+	
+	.grim {
+		display: grid;
+		position: fixed;
+		z-index: 1000;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		grid-template-columns: repeat(32,3.125vw);
+		grid-template-rows: repeat(32,3.125vh);
+		pointer-events: none;
+	}
+
+	.grim--open {
+		pointer-events: auto;
+	}
+
+	.grim__item {
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		-webkit-transition: opacity 1s ease-out;
+		-moz-transition: opacity 1s ease-out;
+		-o-transition: opacity 1s ease-out;
+		transition: opacity 1s ease-out;
+	}
+
+	.grim__item-bg:hover {
+		opacity: .94;
+	}
+
+	.grim__item:first-child {
+		grid-area: 31 / 1 / 33 / 2;
+	}
+
+	.grim__item:nth-child(2) {
+		grid-area: 31 / 2 / 33 / 3;
+	}
+
+	.grim__item:nth-child(3) {
+		grid-area: 29 / 1 / 31 / 3;
+	}
+
+	.grim__item:nth-child(4) {
+		grid-area: 29 / 3 / 33 / 5;
+	}
+
+	.grim__item:nth-child(5) {
+		grid-area: 25 / 1 / 29 / 5;
+	}
+
+	.grim__item:nth-child(6) {
+		grid-area: 25 / 5 / 33 / 9;
+	}
+
+	.grim__item:nth-child(7) {
+		grid-area: 17 / 1 / 25 / 9;
+	}
+
+	.grim__item:nth-child(8) {
+		grid-area: 17 / 9 / 33 / 17;
+	}
+
+	.grim__item:nth-child(9) {
+		grid-area: 1 / 1 / 17 / 17;
+	}
+
+	.grim__item:nth-child(10) {
+		grid-area: 1 / 17 / 33 / 33;
+	}
+
+	.grim__item-bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		transform: scale3d(0,0,1);
+		opacity: 0;
+		box-shadow: 0 0 0 2px currentColor;
+		background: currentColor;
+		background-position: 50%;
+		background-size: cover;
+	}
+
+	.grim__item-bg--1 { color: #F8D05D; background-image: url('/img/bg_dock.jpg');}
+	.grim__item-bg--2 { color: #da3b35; background-image: url('/img/bg_sand.jpg');}
+	.grim__item-bg--3 { color: #302d29; background-color: #f8d15b}
+	.grim__item-bg--4 { color: #4600f2; background-image: url('/img/bg_agave.jpg');}
+	.grim__item-bg--5 { color: #f8d15b; background-image: url('/img/home_bkg.jpg');}
+	.grim__item-bg--6 { color: #4CAF50; background-image: url('/img/bg_trees.jpg');}
+	.grim__item-bg--7 { color: #1bdde6; background-image: url('/img/bg_brush_flowers.jpg');}
+	.grim__item-bg--8 { color: #da3b35; background-image: url('/img/bg_wood.jpg')}
+	.grim__item-bg--9 { color: #4600f1; background-image: url('/img/bg_two_eggs.jpg');}
+	.grim__item-bg--10 { color: #F8D05D; background-image: url('/img/bg_surf.jpg') }
+
+	.grim__item-content {
+		position: relative;
+		color: #fff;
+		transition: color 0.3s;
+		overflow: hidden;
+		width: 100%;
+    height: 100%;
+	}
+
+	.grim__item-content:hover,
+	.grim__item-content:focus {
+		opacity: 0.8;
+		color: inherit;
+		transition: opacity 0.3s;
+	}
+
+	.grim__item-inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		position: relative;
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.grim__item-title {
+		font-weight: normal;
+		margin: 0;
+		font-size: 1.85rem;
+		letter-spacing: 0.15rem;
+		color: #ebff06;
+	}
+
+	.grim__item:nth-child(6) .grim__item-title {
+		font-size: 1.85rem;
+	}
+
+	.grim__item:nth-child(7) .grim__item-title {
+		font-size: 2.05rem;
+	}
+
+	.grim__item:nth-child(8) .grim__item-title {
+		font-size: 2.25rem;
+	}
+
+	.grim__item:nth-child(9) .grim__item-title {
+		font-size: 2.35rem;
+	}
+
+	.grim__item:nth-child(10) .grim__item-title {
+		font-size: 3.55rem;
+	}
+
+	.grim__item-desc {
+		font-size: 1rem;
+		margin: 0.5rem 0 0 0;
+		text-shadow: 2px 2px 2px black;
+	}
+
+	.grim__item-desc::after {
+		content: '...';
+		position: relative;
+		display: block;
+		font-size: 1.75rem;
+	}
+
+	.panel.skills{
+		padding-left: 2rem;
+    background: #cece31;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    color: #4a1e1e;
+	}
+
+
+	#content-3 {
+		background-color: #3d384b;
+		background-image: url('/img/bg_brush_flowers.jpg');
+	}
+
+}
+
+.darken-bkg:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.22);
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+.darken-bkg:hover:before {
+	background: rgba(0,0,0,0);
+}
+
+
+/*
+
+mention ga
+mention mix panel
+
+Bao Quoc Doan is a recent Berkeley transplant from Los Angeles, 
+that enjoys nature and the outdoors.
+He has a passion for healthy meals, and exploring his new found 
+hobby of incorporating
+garden harvest into his meals,
+
+Join him for as he share some of his personal favorite recipes.
+
+He'll be making spring rolls and simple pickling dishes.  You'll linear
+how to quick roll your own spring roll, with fresh greens and herbs, and
+make tasty sauces. 
+*/
