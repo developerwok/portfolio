@@ -102,6 +102,7 @@ p {
 /* hello */
 #content-6 {
 	background-color: #4b4238;
+	background-image: url('/img/bg_surf.jpg')
 }
 
 .menu-trigger {
