@@ -4,3 +4,4 @@
 [ ] add tracking
 [ ] add analytics
 [ ] add text animation
+[ ] add mobile footer
