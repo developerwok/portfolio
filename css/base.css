@@ -233,9 +233,8 @@ pre {
 }
 
 .video-placeholder {
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
-	min-height: 320px;
 	display: flex;
 	align-items: center;
 	text-align: center;

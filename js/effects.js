@@ -16,12 +16,12 @@
 
   var typed = new Typed('.interview_questions', {
     strings: [
-      "What are you passionate about?", 
-      "How would you describe your self?",
-      "What are some design strategies you use?",
-      "What does it mean to be a team player?",
-      "What are some important lessions you've learned as an employee?",
-      "What advice would you give to youself 5 years ago?"
+      "How would you describe yourself?", 
+      "What are you passionate about?",
+      "What does it mean to be a good team player?",
+      "What are some problem solving skills and strategies?",
+      "Reach out, I'd love to hear from you.",
+      "Tell me about your goals and organization!"
     ],
     loop: true,
     loopCount: Infinity,
@@ -39,12 +39,13 @@
 
   var typed = new Typed('.grid_interview_questions', {
     strings: [
-      "What are you passionate about?", 
-      "How would you describe your self?",
-      "What are some design strategies you use?",
-      "What does it mean to be a team player?",
-      "What are some important lessions you've learned as an employee?",
-      "What advice would you give to youself 5 years ago?"
+      "How would you describe yourself?", 
+      "What are you passionate about?",
+      "What does it mean to be a good team player?",
+      "What are some problem solving skills and strategies?",
+      "What advice would you give to youself 5 years ago?",
+      "Reach out, I'd love to hear from you.",
+      "Tell me about your goals and organization!"
     ],
     loop: true,
     loopCount: Infinity,
@@ -55,3 +56,7 @@
 
 
 feather.replace()
+
+// fitvids({
+//   players: 'iframe[src*="google.com"]'
+// })

@@ -131,7 +131,7 @@ pre {
 	position: relative;
 	width: 80%;
 	margin: 1rem 0;
-	border: 2px solid #8c8c8c7d;
+	border: 2px solid rgba(51, 51, 51, .81);
 	overflow: hidden;
 	box-shadow: -4px 9px 148px 30px #00000042;
 	border-radius: 5px;
@@ -139,9 +139,15 @@ pre {
 
 .hello-video iframe {
 	position: relative;
-	height: 400px;
 	width: 100%;
-	left: 0;
+}
+
+.aspectRatioSizer {
+	display: grid;
+	width: 100%;
+}
+.aspectRatioSizer > * {
+	grid-area: 1 / 1 / 2 / 2;
 }
 
 /** mobile **/
@@ -249,7 +255,7 @@ pre {
 	}
 
 	.grim__item-bg:hover {
-		opacity: .94;
+		opacity: 1;
 	}
 
 	.grim__item:first-child {
@@ -328,7 +334,7 @@ pre {
 
 	.grim__item-content:hover,
 	.grim__item-content:focus {
-		opacity: 0.8;
+		opacity: 1;
 		color: inherit;
 		transition: opacity 0.3s;
 	}
