@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/developerwok/portfolio/issues"
   },
-  "homepage": "https://github.com/developerwok/portfolio#readme"
+  "homepage": "https://github.com/developerwok/portfolio#readme",
+  "dependencies": {
+    "compress-images": "^1.4.2"
+  }
 }
