@@ -328,7 +328,7 @@ blockquote {
 
 	.more.menu-trigger {
     position: absolute;
-    bottom: 0;
+    bottom: 2rem;
     z-index: 1;
     left: 2rem;
 	}
