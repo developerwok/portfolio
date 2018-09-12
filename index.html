@@ -7,10 +7,16 @@
 		<meta name="description" content="A CSS Grid powered menu with a box look" />
 		<meta name="keywords" content="menu, css grid, box, navigation, web development, animation" />
 		<meta name="author" content="Codrops" />
+
 		<link rel="shortcut icon" href="favicon.ico">
+
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo1.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" />
+
 		<link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
 		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 		<script src="/js/fitvids.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.6.2/rellax.min.js"></script>
@@ -18,7 +24,7 @@
 		<script src="https://unpkg.com/feather-icons"></script>
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 	</head>
-	<body class="demo-1">
+	<body class="demo-1 render">
 		<svg class="hidden">
 			<symbol id="icon-arrow" viewBox="0 0 24 24">
 				<title>arrow</title>
@@ -39,17 +45,19 @@
 					left: 2px;
 				"></i>
 			</div>
+
+			<!--
 			<div class="content content--fixed">
 				<nav class="demos">
-					<!--
 					<a class="demo demo--current" href="index.html">demo 1</a>
 					<a class="demo" href="index2.html">demo 2</a>
-					-->
 				  <i data-feather="eye"></i>
 					<a href="https://github.com/developerwok/resume" class="github">resume</a>
 				</nav>
-				<button class="menu-trigger">+ more</button>
 			</div>
+			-->
+
+			<button class="menu-trigger more">+ more</button>
 
 			<!-- content slides -->
 			<div id="content-1" class="content content--switch content--switch-current">
@@ -57,20 +65,20 @@
 					<div class="panel">
 						<div class="">
 							<h2 class="content__title">Bao Quoc Doan</h2>
-							<div class="content__date">creative coder</div>
-							<div class="content__location">berkeley, CA</div>
+							<div class="content__date">Creative Coder</div>
+							<div class="content__location">Berkeley, CA</div>
 							<div class="content__location">1 951 415 7255</div> 
 							<div class="content__location">developerwok@gmail.com</div>
 						</div>
 					</div>
 					<div class="panel">
-						<blockquote>
+						<blockquote class="animated fadeInDown slow">
 							I'm seeking an <span class="highlight">enthusiastic</span> and 
 							<span class="highlight">mission orientated team</span>
-							 that can benefit from my 
-							 <u>creative thinking</u>, 
-							 <u>technical apititude</u> and 
-							 <u>leadership qualities</u>. 
+							 that can benefit from
+							 <u class="animated fadeInDown delay-1s	">creative thinking</u>, 
+							 <u class="animated fadeInDown delay-2s	">technical apititude</u> and 
+							 <u class="animated fadeInDown delay-3s	">leadership qualities</u>. 
 						</blockquote>
 					</div>
 				</div>
@@ -78,11 +86,11 @@
 			<div id="content-6" class="content content--switch">
 				<div class="box-row">
 					<div class="panel">
-						<h2 class="content__title fixed-center">Personal FAQ</h2>
+						<h2 class="content__title fixed-center show-desktop">Personal FAQ</h2>
 					</div>
 					<div class="panel">
 
-						<h4>
+						<h4 style="min-height: 80px;" class="questions">
 							<span class="grid_interview_questions">
 							</span>
 						</h4>
@@ -109,7 +117,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="content-4" class="content content--switch">
+			<div id="content-4" class="content content--switch show-desktop">
 				<div class="box-row">
 					<div class="panel">
 						<div class="fixed-center">
@@ -119,7 +127,7 @@
 					<div class="panel skills">
 						<div class="scroll-pane">
 
-						<p class="content__text"><strong>software development</strong></p>
+						<p class="content__text subtitle"><strong>software development</strong></p>
 						<p>
 							7+ years
 						</p>
@@ -210,48 +218,52 @@ coding office hours
 					</div>		
 				</div>
 			</div>
-			<div id="content-5" class="content content--switch">
+			<div id="content-5" class="content content--switch show-desktop">
 				<div class="box-row">
 					<div class="panel">
 						<div class="fixed-center">
-							<h2 class="content__title">Resume</h2>
+							<h2 class="content__title show-desktop">Résumé</h2>
 						</div>
 					</div>
 					<div class="panel">
 						<div class="show-mobile">
-							<p>
+						</div>
+						<iframe class="show-desktop" src="https://developerwok.github.io/resume/"></iframe>
+					</div>		
+				</div>
+			</div>
+			<div class="show-mobile" style="width: 100%; text-align: center; padding: 2rem .5rem; background: #3d384b">
+						<p>
 								<a href="https://github.com/developerwok/resume/blob/master/README.md">
 									<i data-feather="external-link"
 									style="
 										position: relative;
 										display: inline-block;
-										margin-bottom: 30px;
-										float: left;
-										margin-right: 7px;"></i>
-									View Resume on Github
+										margin-right: 7px;
+										top: 6px;"></i>
+									View Résumé on Github
 								</a>
-								<a href="https://github.com/developerwok/resume/blob/master/README.md">
+								<a href="https://github.com/developerwok/resume/blob/master/README.md" style="display: none">
 									<img src="/img/resume-preview.png" />
 								</a>
 							</p>
-						</div>
-						<iframe src="https://developerwok.github.io/resume/"></iframe>
-					</div>		
-				</div>
+				Scroll for Selected Projects <br />
+				<i data-feather="arrow-down"></i>
 			</div>
 			<div id="content-3" class="content content--switch">
 				<div class="box-row">
 					<div class="panel">
-						<h2 class="content__title fixed-center">Projects</h2>
+						<h2 class="content__title fixed-center show-desktop">Projects</h2>
 					</div>
 					<div class="panel" style="background-color: #3d384b">
 						<div class="">
 						<div class="scroll-ele">
 
+						<div class="slide">
+						<img src="/img/cover-wrangle.png" />
 						<h3>
 							Wrangle.me
 						</h3>
-						<img src="/img/cover-wrangle.png" />
 						<p>
 							Creative teams use emails to discuss projects and 
 							share assets.  Staying organized across multple 
@@ -269,10 +281,14 @@ coding office hours
 							to pdf makes collecting, curating and presenting ideas
 							a fluid process for creative teams.
 						</p>
+						</div>
+
+
+						<div class="slide">
+						<img src="/img/cover-helpkelp.png" />
 						<h3>
 							Help Kelp
 						</h3>
-						<img src="/img/cover-helpkelp.png" />
 						<p>
 							The Kelp Challenge is an enviromental restoration project.  
 							The project aims to mitigate the degradation of kelp forest 
@@ -297,10 +313,14 @@ coding office hours
 							student organization at USC that drives social impact 
 							through software projects for non profit organizations.
 						</p>	
+						</div>
+
+
+						<div class="slide">
+						<img src="/img/cover-plants.png" />
 						<h3>
 							Newbie Gardening E-book
 						</h3>
-						<img src="/img/cover-plants.png" />
 						<p>
 							Gardening is often an intimidating experiences for those that have
 							not invested the time or have the space to learn how to grow
@@ -311,11 +331,14 @@ coding office hours
 							a useful digital pamplet for those at the 
 							begining of there learning journey.
 						</p>
+						</div>
+
+
+						<div class="slide">
+						<img src="/img/cover-whisper.png" />
 						<h3>
 							Whisper node
 						</h3>
-
-						<img src="/img/cover-whisper.png" />
 						<p>
 							Whisper Node is a lighting panel that reacts to audio input.
 						</p>
@@ -330,18 +353,19 @@ coding office hours
 						<p style="height: 3rem;">
 							
 						</p>
+						</div>
 					</div>		
 
 					</div>
 					</div>
 				</div>
 			</div>
-			<div id="content-2" class="content content--switch">
+			<div id="content-2" class="content content--switch show-desktop">
 				<div class="box-row">
 					<div class="panel">
 						<h2 class="content__title">Tutorials & Ideas</h2>
 					</div>
-					<div class="panel">
+					<div class="panel" style="background-color: #383f4b">
 
 						<h2>Coming Soon...</h2>
 

@@ -25,8 +25,8 @@
     ],
     loop: true,
     loopCount: Infinity,
-    startDelay: 600,
-    typeSpeed: 45
+    startDelay: 1800,
+    typeSpeed: 95
   });
 
  }
@@ -49,8 +49,8 @@
     ],
     loop: true,
     loopCount: Infinity,
-    startDelay: 600,
-    typeSpeed: 45
+    startDelay: 1800,
+    typeSpeed: 95
   });
 
 

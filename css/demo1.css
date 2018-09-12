@@ -9,8 +9,13 @@
     --color-info: #f0f0f0;
 }
 
+.highlight {
+	color: #f8d15b;
+}
+
 p {
-	font-family: 'Cardo', serif;
+	/* font-family: 'Cardo', serif; */
+	font-family: 'Muli', sans-serif;
 }
 
 .panel {
@@ -28,7 +33,6 @@ p {
 .panel img {
 	border-radius: 3px;
 	border: 1px solid rgba(0, 0, 0, 0.5);
-	max-width: 580px;
 	width: 100%;
 }
 
@@ -46,12 +50,12 @@ p {
 
 .content__date {
 	font-size: 1rem;
-	padding: .5rem 0;
+	padding: .25rem 0;
 }
 
 .content__location {
 	font-size: 1rem;
-	padding: .5rem 0;
+	padding: .25rem 0;
 }
 
 .content__text {
@@ -79,6 +83,7 @@ p {
 /* tutorials */
 #content-2 {
 	background-color: #383f4b;
+	background-image: url('/img/bg_trees.jpg');
 }
 
 /* projects */
@@ -102,7 +107,6 @@ p {
 /* hello */
 #content-6 {
 	background-color: #4b4238;
-	background-image: url('/img/bg_surf.jpg')
 }
 
 .menu-trigger {
@@ -129,7 +133,7 @@ pre {
 
 .hello-video {
 	position: relative;
-	width: 80%;
+	width: 100%;
 	margin: 1rem 0;
 	border: 2px solid rgba(51, 51, 51, .81);
 	overflow: hidden;
@@ -150,16 +154,118 @@ pre {
 	grid-area: 1 / 1 / 2 / 2;
 }
 
+blockquote {
+	letter-spacing: -2px;
+}
+
 /** mobile **/
 @media screen and (max-width: 55em) {
 	#content-4,
 	#content-5 {
 		background-image: none;
 	}
+
+	#content-5 {
+		padding-top: 1rem;
+	}
+
+	blockquote {
+		padding-bottom: 7rem;
+    line-height: 1.8rem;
+	}
+
+	blockquote,
+	.content__title,
+	.content__date,
+	.content__location {
+		padding-left: 2rem;
+		padding-right: 2rem;
+
+	}
+
+	.questions {
+    position: absolute;
+		top: 0px;
+		left: 0rem;
+		z-index: 1;
+	}
+
+	.hello-video {
+		box-shadow: none;
+		border: none;
+		margin: 0;
+		border-radius: 0px;
+	}
+
+	.panel .hello-video img	{
+		border: 0;
+		border-radius: 0;
+	}
+	.panel .hello-video svg {
+		display: none;
+	}
+
+	pre {
+	 border-radius: 0;	
+	}
+
+	.content {
+		position: relative;
+	}
+
+	.content p {
+		padding-left: 2rem;
+		padding-right: 2rem;
+		font-size: 1rem;
+	}
+
+	#content-3 .panel h3 {
+    margin-left: 2rem;
+    padding: .5rem;
+    background: #f8d15b;
+		color: black;
+		font-size: 1.3rem;
+		display: inline-block;
+	}
+
+	.slide {
+		position: relative;
+		padding-bottom: 3rem;
+	}
+
+	.slide h3 {
+		top: -1rem;
+	}
+
 }
 
 /** desktop **/
 @media screen and (min-width: 55em) {
+
+	blockquote {
+		padding: 0;
+		font-size: 3rem;
+		line-height: 3.65rem;
+		margin: 0;
+	}
+
+
+	.slide img {
+		margin-top: 1rem;
+	}
+
+	.slide h3 {
+		padding-top: 1rem;
+	}
+	
+	#content-6 {
+		background-image: url('/img/bg_surf.jpg');
+	}
+
+	.hello-video {
+		width: 80%;
+		border: 0;
+	}
 
 	.scroll-box {
 		height: 100vh;
@@ -218,6 +324,13 @@ pre {
 		color: #000;
 		white-space: nowrap;
 		background-color: #f8d15b;
+	}
+
+	.more.menu-trigger {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    left: 2rem;
 	}
 
 	.menu-trigger--close {
@@ -312,16 +425,16 @@ pre {
 		background-size: cover;
 	}
 
-	.grim__item-bg--1 { color: #F8D05D; background-image: url('/img/bg_dock.jpg');}
-	.grim__item-bg--2 { color: #da3b35; background-image: url('/img/bg_sand.jpg');}
-	.grim__item-bg--3 { color: #302d29; background-color: #f8d15b}
-	.grim__item-bg--4 { color: #4600f2; background-image: url('/img/bg_agave.jpg');}
-	.grim__item-bg--5 { color: #f8d15b; background-image: url('/img/home_bkg.jpg');}
-	.grim__item-bg--6 { color: #4CAF50; background-image: url('/img/bg_trees.jpg');}
-	.grim__item-bg--7 { color: #1bdde6; background-image: url('/img/bg_brush_flowers.jpg');}
-	.grim__item-bg--8 { color: #da3b35; background-image: url('/img/bg_wood.jpg')}
-	.grim__item-bg--9 { color: #4600f1; background-image: url('/img/bg_two_eggs.jpg');}
-	.grim__item-bg--10 { color: #F8D05D; background-image: url('/img/bg_surf.jpg') }
+	.grim__item-bg--1 { background-image: url('/img/bg_dock.jpg');}
+	.grim__item-bg--2 { background-image: url('/img/bg_sand.jpg');}
+	.grim__item-bg--3 { background-color: #f8d15b}
+	.grim__item-bg--4 { background-image: url('/img/bg_agave.jpg');}
+	.grim__item-bg--5 { background-image: url('/img/home_bkg.jpg');}
+	.grim__item-bg--6 { background-image: url('/img/bg_trees.jpg');}
+	.grim__item-bg--7 { background-image: url('/img/bg_brush_flowers.jpg');}
+	.grim__item-bg--8 { background-image: url('/img/bg_wood.jpg')}
+	.grim__item-bg--9 { background-image: url('/img/bg_two_eggs.jpg');}
+	.grim__item-bg--10 { background-image: url('/img/bg_surf.jpg') }
 
 	.grim__item-content {
 		position: relative;
@@ -400,7 +513,6 @@ pre {
     color: #4a1e1e;
 	}
 
-
 	#content-3 {
 		background-color: #3d384b;
 		background-image: url('/img/bg_brush_flowers.jpg');
@@ -424,21 +536,23 @@ pre {
 	background: rgba(0,0,0,0);
 }
 
-
-/*
-
-mention ga
-mention mix panel
-
-Bao Quoc Doan is a recent Berkeley transplant from Los Angeles, 
-that enjoys nature and the outdoors.
-He has a passion for healthy meals, and exploring his new found 
-hobby of incorporating
-garden harvest into his meals,
-
-Join him for as he share some of his personal favorite recipes.
-
-He'll be making spring rolls and simple pickling dishes.  You'll linear
-how to quick roll your own spring roll, with fresh greens and herbs, and
-make tasty sauces. 
-*/
+.slow {
+  animation-duration: 2200ms;
+  animation-delay: 500ms;
+  /* -vendor-animation-iteration-count: infinite; */
+}
+.delay-1s {
+  animation-duration: 1200ms;
+  animation-delay: 500ms;
+  /* -vendor-animation-iteration-count: infinite; */
+}
+.delay-2s {
+  animation-duration: 1200ms;
+  animation-delay: 1000ms;
+  /* -vendor-animation-iteration-count: infinite; */
+}
+.delay-3s {
+  animation-duration: 1200ms;
+  animation-delay: 1500ms;
+  /* -vendor-animation-iteration-count: infinite; */
+}
